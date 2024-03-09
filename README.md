@@ -1,4 +1,4 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/hymkor/go-tiny-optional.svg)](https://pkg.go.dev/github.com/hymkor/go-minimum-optional)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hymkor/go-tiny-optional.svg)](https://pkg.go.dev/github.com/hymkor/go-tiny-optional)
 
 go-tiny-optional
 ===================
