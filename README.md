@@ -5,8 +5,6 @@ go-tiny-optional
 
 This package has only two constructors (Some, None) and four methods (IfSome, IsNone, Each, Match).
 
-It requires Go 1.18 or later.
-
 ```example.go
 package main
 
@@ -19,6 +17,7 @@ func test(x optional.Value[int]) {
         println("   IfSome: it has a value:", v)
     })
 
+    // GOEXPRIMENT=rangefunc is required to build following line.
     for v := range x.Each {
         println("   for-range(v1.22 X:rangefunc): it has a value:", v)
     }
@@ -45,7 +44,7 @@ func main() {
 }
 ```
 
-**go run example.go**
+**env GOEXPERIMENT=rangefunc go run example.go**
 
 ```env GOEXPERIMENT=rangefunc go run example.go|
 None[int]
